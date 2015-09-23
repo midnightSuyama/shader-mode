@@ -25,6 +25,8 @@
 ;; <http://docs.unity3d.com/Manual/>
 ;; <http://http.developer.nvidia.com/Cg/>
 
+;; Package-Requires: ((emacs "24"))
+
 ;;; Code:
 
 (defconst shader-font-lock-keyword-face
