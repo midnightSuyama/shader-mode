@@ -2,6 +2,7 @@
 
 ;; Author: midnightSuyama <midnightSuyama@gmail.com>
 ;; URL: https://github.com/midnightSuyama/shader-mode
+;; Package-Requires: ((emacs "24"))
 ;; Version: 0.1
 
 ;; Copyright (C) 2015 midnightSuyama
@@ -24,8 +25,6 @@
 ;; Reference
 ;; <http://docs.unity3d.com/Manual/>
 ;; <http://http.developer.nvidia.com/Cg/>
-
-;; Package-Requires: ((emacs "24"))
 
 ;;; Code:
 
