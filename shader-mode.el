@@ -3,7 +3,7 @@
 ;; Author: midnightSuyama <midnightSuyama@gmail.com>
 ;; URL: https://github.com/midnightSuyama/shader-mode
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.1
+;; Version: 0.1.1
 
 ;; Copyright (C) 2015 midnightSuyama
 
@@ -33,7 +33,7 @@
              (regexp-opt '(
                            ;; ShaderLab
                            "Shader" "Properties" "SubShader" "Pass" "UsePass" "GrabPass" "Tags"
-                           "Cull" "Zwrite" "ZTest" "Offset"
+                           "Cull" "ZWrite" "ZTest" "Offset"
                            "Blend"
                            "Tags"
                            "Stencil" "Ref" "ReadMask" "WriteMask" "Comp" "Pass" "Fail" "ZFail"
