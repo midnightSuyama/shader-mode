@@ -182,6 +182,8 @@
   (modify-syntax-entry ?\n "> b")
   (setq font-lock-defaults '(shader-font-lock-keywords))
   (setq indent-line-function 'shader-indent-line)
+  (setq comment-start "// ")
+  (setq comment-end "")
   (set (make-local-variable 'electric-indent-chars)
        (append "{}()[]" electric-indent-chars)))
 
