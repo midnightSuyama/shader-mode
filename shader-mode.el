@@ -3,7 +3,7 @@
 ;; Author: midnightSuyama <midnightSuyama@gmail.com>
 ;; URL: https://github.com/midnightSuyama/shader-mode
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.2.1
+;; Version: 0.2.2
 
 ;; Copyright (C) 2015 midnightSuyama
 
@@ -33,10 +33,11 @@
              (regexp-opt '(
                            ;; ShaderLab
                            "Shader" "Properties" "SubShader" "Pass" "UsePass" "GrabPass" "Tags"
+                           "Range" "Float" "Int" "Color" "Vector" "2D" "Cube" "3D"
                            "Cull" "ZTest" "ZWrite" "Offset" "Blend" "BlendOp" "AlphaToMask" "ColorMask"
                            "Stencil" "Ref" "ReadMask" "WriteMask" "Comp" "Fail" "ZFail"
                            "Name"
-                           "Color" "Material" "Lighting" "SeparateSpecular" "ColorMaterial" "Diffuse" "Ambient" "Specular" "Shininess" "Emission"
+                           "Material" "Lighting" "SeparateSpecular" "ColorMaterial" "Diffuse" "Ambient" "Specular" "Shininess" "Emission"
                            "SetTexture" "combine" "constantColor"
                            "AlphaTest"
                            "Fog" "Mode" "Density" "Range"
