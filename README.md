@@ -13,4 +13,4 @@ Install `shader-mode.el` from MELPA with `package.el`
 ## Reference
 
 * [Unity Manual](http://docs.unity3d.com/Manual/)
-* [Cg Toolkit Documentation](http://http.developer.nvidia.com/Cg/)
+* [Cg Toolkit Documentation](https://developer.nvidia.com/cg-toolkit)

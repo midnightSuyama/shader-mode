@@ -3,7 +3,7 @@
 ;; Author: midnightSuyama <midnightSuyama@gmail.com>
 ;; URL: https://github.com/midnightSuyama/shader-mode
 ;; Package-Requires: ((emacs "24"))
-;; Version: 0.2.2
+;; Version: 0.2.3
 
 ;; Copyright (C) 2015 midnightSuyama
 
@@ -24,7 +24,7 @@
 
 ;; Reference
 ;; <http://docs.unity3d.com/Manual/>
-;; <http://http.developer.nvidia.com/Cg/>
+;; <https://developer.nvidia.com/cg-toolkit>
 
 ;;; Code:
 
@@ -35,7 +35,7 @@
                            "Shader" "Properties" "SubShader" "Pass" "UsePass" "GrabPass" "Tags"
                            "Range" "Float" "Int" "Color" "Vector" "2D" "Cube" "3D"
                            "Cull" "ZTest" "ZWrite" "Offset" "Blend" "BlendOp" "AlphaToMask" "ColorMask"
-                           "Stencil" "Ref" "ReadMask" "WriteMask" "Comp" "Fail" "ZFail"
+                           "Stencil" "Ref" "ReadMask" "WriteMask" "Comp" "CompFront" "CompBack" "PassFront" "PassBack" "Fail" "FailFront" "FailBack" "ZFail" "ZFailFront" "ZFailBack"
                            "Name"
                            "Material" "Lighting" "SeparateSpecular" "ColorMaterial" "Diffuse" "Ambient" "Specular" "Shininess" "Emission"
                            "SetTexture" "combine" "constantColor"
@@ -81,11 +81,11 @@
                            "INNERTESS" "INSTANCEID"
                            "NOPERSPECTIVE" "NORMAL"
                            "PATCH" "POSITION" "PRIMITIVEID" "PSIZ" "PSIZE"
-                           "SPECULAR" "SV_POSITION" "SV_Target"
+                           "SPECULAR" "SV_Depth" "SV_POSITION" "SV_Target" "SV_VertexID"
                            "TANGENT" "TESSCOORD" "TESSFACTOR"
                            "UV"
-                           "VERTEXID" "VPOS"))
-             "\\|\\(ATTR\\|BCOL\\|C\\|CLP\\|COL\\|COLOR\\|TEX\\|TEXCOORD\\|TEXUNIT\\)[0-9]+"
+                           "VERTEXID" "VFACE" "VPOS"))
+             "\\|\\(ATTR\\|BCOL\\|C\\|CLP\\|COL\\|COLOR\\|SV_Target\\|TEX\\|TEXCOORD\\|TEXUNIT\\)[0-9]+"
              "\\)\\>") . font-lock-constant-face))
 
 (defconst shader-font-lock-builtin-face
