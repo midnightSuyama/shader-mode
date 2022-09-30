@@ -188,6 +188,7 @@
   (set (make-local-variable 'electric-indent-chars)
        (append "{}()[]" electric-indent-chars)))
 
+;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.shader$" . shader-mode))
 
 (provide 'shader-mode)
